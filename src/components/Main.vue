@@ -1,6 +1,19 @@
 <template>
     <main>
-        
+        <div class="column">
+            <ul class="dc-comics" >
+                <li>
+                    <a v-for="(link,index) in dcComics" :key="index" :href="link.url">{{link.text}}</a>
+                </li>
+            </ul>
+            <ul class="dc-comics" >
+                <li>
+                    <a v-for="(link,index) in dcComics" :key="index" :href="link.url">{{link.text}}</a>
+                </li>
+            </ul>
+        </div>
+        <div class="column"></div>
+        <div class="column"></div>
     </main>
 </template>
 
@@ -50,12 +63,28 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
     main {
         background-image: url(../assets/img/footer-bg.jpg);
         height: 500px;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        padding: 40px 0px;
+    }
+    .column {
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+    }
+    .dc-comics {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+    }
+    li a {
+        display: block;
+        text-decoration: none;
+        color: white;
     }
 </style>
