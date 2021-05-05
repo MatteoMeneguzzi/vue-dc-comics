@@ -17,12 +17,12 @@ export default {
 
 <style scoped lang="scss">
 .box {
-	width: calc((100% / 6) -);
+	width: calc((100% / 6));
 	overflow-y: hidden;
 	margin-bottom: 50px;
 
-	img {
-		// width: 100px;
-	}
+	// img {
+	// 	// width: 100px;
+	// }
 }
 </style>
