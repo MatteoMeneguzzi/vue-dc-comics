@@ -8,6 +8,7 @@
 					:key="index"
 					:details="product"
 				/>
+				<a href=""><button class="load-more">Load more</button></a>
 			</div>
 		</div>
 		<div class="blu-area">
@@ -193,6 +194,7 @@ export default {
 .jumbotron-background {
 	background-image: url(../assets/img/jumbotron.jpg);
 	object-fit: cover;
+	background-position: center top;
 	background-repeat: no-repeat;
 
 	height: 400px;
@@ -207,8 +209,38 @@ export default {
 
 .black-area {
 	.container {
+		position: relative;
+
 		display: flex;
 		flex-wrap: wrap;
+		padding: 100px 20px 0px;
+		&::before {
+			content: "current series";
+			position: absolute;
+			top: -40px;
+			left: 0;
+			padding: 20px 35px;
+			background-color: $primary-blue;
+			color: white;
+			text-transform: uppercase;
+			border: none;
+			font-weight: bold;
+		}
+		a {
+			text-decoration: none;
+			margin: 0 auto;
+			margin-bottom: 30px;
+
+			button {
+				padding: 20px 75px;
+				background-color: $primary-blue;
+				color: white;
+				text-transform: uppercase;
+				border: none;
+				font-weight: bold;
+				cursor: pointer;
+			}
+		}
 	}
 }
 

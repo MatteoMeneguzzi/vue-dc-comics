@@ -120,11 +120,11 @@ main {
 	background-size: 700px;
 	margin: 0 auto;
 	display: flex;
-	height: 450px;
 }
 
 .column {
 	min-width: 200px;
+	margin: 40px 0px;
 }
 
 h1 {
@@ -138,7 +138,7 @@ h1 {
 ul {
 	display: flex;
 	flex-direction: column;
-	/* margin-bottom: 25px; */
+	margin-bottom: 25px;
 }
 
 ul:nth-child(3) {
